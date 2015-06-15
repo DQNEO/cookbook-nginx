@@ -1,5 +1,5 @@
 # remove russian files
-%{
+%w{
 koi-utf
 koi-win
 win-utf
@@ -10,7 +10,7 @@ win-utf
 end
 
 # remove scgi, uwsgi files
-%{
+%w{
 scgi_params
 uwsgi_params
 }.each do |filename|
