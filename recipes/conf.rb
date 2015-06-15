@@ -8,5 +8,7 @@ conf.d/default.conf
     owner "root"
     group "root"
     mode "0644"
+    notifies :start,  "service[nginx]"
+    notifies :reload, "service[nginx]"
   end
 end
