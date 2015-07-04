@@ -8,6 +8,7 @@ end
 
 %w{
 nginx.conf
+log_format_ltsv.conf
 }.each do |filename|
   template "/etc/nginx/#{filename}" do
     source filename
