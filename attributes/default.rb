@@ -4,4 +4,5 @@ default['nginx']['sendfile'] = 'on'
 default['nginx']['user'] = 'nginx'
 default['nginx']['worker_processes'] = 1
 default['nginx']['worker_connections'] = 1024
+default['nginx']['port'] = 80
 
