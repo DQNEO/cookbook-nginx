@@ -9,7 +9,6 @@ end
 
 %w{
 nginx.conf
-default.conf
 }.each do |filename|
   template "/etc/nginx/#{filename}" do
     source filename
