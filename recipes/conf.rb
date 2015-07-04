@@ -1,4 +1,19 @@
 # put conf files
+directory "/etc/nginx" do
+  owner "root"
+  group "root"
+  mode  "0755"
+  action :create
+end
+
+directory "/etc/nginx/conf.d" do
+  owner "root"
+  group "root"
+  mode  "0755"
+  action :create
+end
+
+
 %w{
 nginx.conf
 conf.d/default.conf
