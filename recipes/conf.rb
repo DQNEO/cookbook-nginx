@@ -6,7 +6,6 @@ directory "/etc/nginx" do
   action :create
 end
 
-
 %w{
 nginx.conf
 }.each do |filename|
