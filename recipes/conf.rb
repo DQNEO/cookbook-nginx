@@ -6,17 +6,10 @@ directory "/etc/nginx" do
   action :create
 end
 
-directory "/etc/nginx/conf.d" do
-  owner "root"
-  group "root"
-  mode  "0755"
-  action :create
-end
-
 
 %w{
 nginx.conf
-conf.d/default.conf
+default.conf
 }.each do |filename|
   template "/etc/nginx/#{filename}" do
     source filename

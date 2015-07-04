@@ -19,9 +19,7 @@ uwsgi_params
   end
 end
 
-=begin
 directory "/etc/nginx/conf.d" do
   action :delete
   recursive true
 end
-=end
